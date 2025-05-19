@@ -20,7 +20,7 @@ const App = () => {
         navigate("/");
       }else{
         console.log("Logout Out");
-        navigate('/login');
+        navigate('/Netflix-clone/login');
       }
     })
   }, [])
@@ -29,9 +29,9 @@ const App = () => {
     <div>
       <ToastContainer theme="dark" />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/player/:id' element={<Player/>} />
+        <Route path='/Netflix-clone' element={<Home/>}/>
+        <Route path='/Netflix-clone/login' element={<Login/>}/>
+        <Route path='/Netflix-clone/player/:id' element={<Player/>} />
       </Routes>
     </div>
   )
