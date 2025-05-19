@@ -17,10 +17,10 @@ const App = () => {
     onAuthStateChanged(auth, async (user)=>{
       if(user){
         console.log("Logged In");
-        navigate("/Netflix-clone/");
+        navigate("/netflixifyclone/");
       }else{
         console.log("Logout Out");
-        navigate('/Netflix-clone/login');
+        navigate('/netflixifyclone/login');
       }
     })
   }, [])
@@ -29,9 +29,9 @@ const App = () => {
     <div>
       <ToastContainer theme="dark" />
       <Routes>
-        <Route path='/Netflix-clone' element={<Home/>}/>
-        <Route path='/Netflix-clone/login' element={<Login/>}/>
-        <Route path='/Netflix-clone/player/:id' element={<Player/>} />
+        <Route path='/netflixifyclone' element={<Home/>}/>
+        <Route path='/netflixifyclone/login' element={<Login/>}/>
+        <Route path='/netflixifyclone/player/:id' element={<Player/>} />
       </Routes>
     </div>
   )

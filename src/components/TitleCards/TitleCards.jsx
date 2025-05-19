@@ -41,7 +41,7 @@ const TitleCards = ({ title, category }) => {
       <div className="card-list" ref={cardsRef}>
         {apiData.map((card, index) => {
           return (
-            <Link to={`/Netflix-clone/player/${card.id}`} key={index} className="card">
+            <Link to={`/netflixifyclone/player/${card.id}`} key={index} className="card">
               <img
                 src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path}
               />
